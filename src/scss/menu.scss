@@ -1,0 +1,49 @@
+@import "sizes.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #edefef;
+}
+
+nav.menu{
+    width: 100%;
+    ul{
+        padding: 4% 0 0 2%;
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin-left: 7%;
+            border-bottom: none;
+            transition: all 0.1s linear;
+            a{
+                text-decoration: none;
+                font-size: $basic-font-size;
+                color: #3f3f3f;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            &:after{
+                display: block;
+                content: '';
+                height: 0.2em;
+                width: 0;
+                background-color: #015270;
+                transition: all 0.2s ease-in-out;
+            }
+            &:focus:after,
+            &:hover:after{
+                width: 100%;
+            }
+        }
+        li.active{
+            &:after{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../style/loginCheck.css" />
+</head>
+<body>
+    <div class="form-wrapper">
+        <form id="form" name="auth" class="form-container">
+            <div id="login-block" class="block">
+                <span id="login-message" class="validation-message hide"></span>
+                <input id="login" name="login" type="text" placeholder="Логин" autocomplete="off">
+            </div>
+
+            <div id="password-block" class="block">
+                <span id="password-message" class="validation-message hide"></span>
+                <input id="password" name="password" type="password" placeholder="Пароль" autocomplete="off">
+            </div>
+            <button id="login-button">Вход</button>
+        </form>    
+    </div>
+    <div id="modal-complete-message" class="complete-message">
+        <span id="modal-text"></span>
+        <button id="close-modal-form-btn" class="">Закрыть</button>
+    </div>
+    <div id="modal-background" class="modal-background">
+    </div>
+    <script src="../../js/loginCheck/loginCheck.js"></script>
+</body>
+</html>
